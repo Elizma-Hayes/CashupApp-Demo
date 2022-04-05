@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1023289005798",
+    "firebase_url": "https://cashupdb2.firebaseio.com",
+    "project_id": "cashupdb2",
+    "storage_bucket": "cashupdb2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023289005798:android:4581887655dd6dd6bacd27",
+        "android_client_info": {
+          "package_name": "com.example.cashup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023289005798-40t6c4ol86328h9o7u277qblh6v3avch.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cashup",
+            "certificate_hash": "4da6e2683d0ed7d3f6ab224c2fa9595d9bc772a9"
+          }
+        },
+        {
+          "client_id": "1023289005798-tl166en4d4q3tdsaubpbk559auae3s6i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_Pmjo9tvlE0vqqnmbYpLLFLE8fPg8YQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023289005798-tl166en4d4q3tdsaubpbk559auae3s6i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

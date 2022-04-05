@@ -1,0 +1,7 @@
+#Tue Apr 05 10:58:34 CAT 2022
+base.1=C\:\\Users\\Admin\\Desktop\\3.0.1\\CashUpApp2.0\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
+path.1=classes.dex
+base.0=C\:\\Users\\Admin\\Desktop\\3.0.1\\CashUpApp2.0\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex

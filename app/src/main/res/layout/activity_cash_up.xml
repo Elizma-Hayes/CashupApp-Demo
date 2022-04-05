@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CashUpActivity">
+
+    <TableLayout
+        android:id="@+id/vwSlip"
+        android:layout_width="356dp"
+        android:layout_height="454dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/rwLable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rwlbl"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Cashup"
+                android:textAlignment="viewEnd"
+                android:textSize="29sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rwlblDm1"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="                         "
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/rwlblDm2"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/rwlblDm3"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:text="            "
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/rwlblDm4"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:textAlignment="viewEnd"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rwCashFloat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rwlblFloatLable"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Cash:"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rwlblDm03"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rwlblDm05"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text=""
+                android:textAlignment="viewEnd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rwlblDm06"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:text="R"
+                android:textAlignment="viewEnd"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rwlblFloat"
+                android:layout_width="84dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:inputType="textNoSuggestions|textVisiblePassword|numberDecimal"
+                android:maxLength="8"
+                android:maxLines="1"
+                android:textAlignment="viewStart"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rwSlip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rwlblSlipable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Slip"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rwlblDm010"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rwlbDm012"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textAlignment="viewEnd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rwlblDm013"
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rwLable2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rwlblDm5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="         "
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rwlblQty"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="Qty"
+                android:textAlignment="viewStart"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rwlblSub"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Subtotal"
+                android:textAlignment="textStart"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rwlblDm01"
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/rwDM02"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:text="Tips"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rwFiftyCent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rwlblFC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="    50¢"
+                android:textAlignment="textStart"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/rwlblFCQty"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:inputType="number|textNoSuggestions|textVisiblePassword"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rwlblFCSub"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="viewStart"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rwlblDm"
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/rwlblFCTake"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rwOneRand"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rwlblOR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="    R1"
+                android:textAlignment="textStart"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/rwlblORQty"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:inputType="textNoSuggestions|textVisiblePassword|numberSigned"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rwlblORSub"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="viewStart"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rwlblDm6"
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/rwlblORTake"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rwTwoRand"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rwlblTR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="    R2"
+                android:textAlignment="textStart"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/rwlblTRQty"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:inputType="textNoSuggestions|textVisiblePassword|numberSigned"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rwlblTRSub"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="viewStart"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rwlblDm8"
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/rwlblTRTake"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rwFiveRand"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rwlblFR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="    R5"
+                android:textAlignment="textStart"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/rwlblFRQty"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:inputType="textNoSuggestions|textVisiblePassword|numberSigned"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rwlblFRSub"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="viewStart"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rwlblDm10"
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/rwlblFRTake"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rwTenRand"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rwlblTeR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="    R10"
+                android:textAlignment="textStart"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/rwlblTeRQty"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:inputType="textNoSuggestions|textVisiblePassword|numberSigned"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rwlblTeRSub"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="viewStart"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rwlblDm012"
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/rwlblTeRTake"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rwTwentyRand"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rwlblTwR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="    R20"
+                android:textAlignment="textStart"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/rwlblTwRQty"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:inputType="textNoSuggestions|textVisiblePassword|numberSigned"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rwlblTwRSub"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="viewStart"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rwlblDm12"
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/rwlblTwRTake"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rwFiftyRand"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rwlblFfR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="    R50"
+                android:textAlignment="textStart"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/rwlblFfRQty"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:inputType="textNoSuggestions|textVisiblePassword|numberSigned"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rwlblFfRSub"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="viewStart"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rwlblDm14"
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/rwlblFfRTake"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rwOneHundredRand"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rwlblOhR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="    R100"
+                android:textAlignment="textStart"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/rwlblOhRQty"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:inputType="textNoSuggestions|textVisiblePassword|numberSigned"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rwlblOhRSub"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="viewStart"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rwlblDm16"
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/rwlblOhRTake"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rwTwoHundredRand"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rwlblThR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="    R200"
+                android:textAlignment="textStart"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/rwlblThRQty"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:inputType="textNoSuggestions|textVisiblePassword|numberSigned"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rwlblThRSub"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="viewStart"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rwlblDm18"
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/rwlblThRTake"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rwTotals"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rwlbDm001"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="    "
+                android:textAlignment="textStart"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rwlblDm002"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="R"
+                android:textAlignment="viewEnd"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/rwlblSubTot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="viewStart"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rwlblDm004"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:text="R"
+                android:textAlignment="viewEnd"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rwlblTipTot"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/vwFinal"
+        android:layout_width="362dp"
+        android:layout_height="211dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vwSlip">
+
+        <TableRow
+            android:id="@+id/rwButtons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:id="@+id/rwfnlDM0005"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/rwfnlDM0006"
+                    android:layout_width="23dp"
+                    android:layout_height="match_parent"
+                    android:textAlignment="viewStart"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnCalc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calculate" />
+
+                <TextView
+                    android:id="@+id/rwfnlDM0007"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rwfnlDM0008"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:text="            "
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/btnReset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reset" />
+
+                <TextView
+                    android:id="@+id/rwfnlDM0009"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:textAlignment="viewEnd"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next" />
+
+                <TextView
+                    android:id="@+id/rwfnlDM00010"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </TableRow>
+
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
